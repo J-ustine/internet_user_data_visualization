@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  --color-primary: #fa57e2;
+  --tooltip-background: rgba(65, 68, 72, 0.9);
+  --tooltip-color: #fff;
+  --chart-background: #000000;
+  --chart-color: #fff;
+  --chart-handle-fill: #fa57e2;
+  --chart-handle-stroke: #fa57e2;
+  --chart-handle-dots: #fa57e2;
+  --chart-handle-line: #fa57e2;
+}

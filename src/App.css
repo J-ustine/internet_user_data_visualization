@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+  background-color: black;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 5px;
+}
+
+.App-logo {
+  height: 7vmin;
+}
+
+.title {
+  font-weight: 700;
+  flex-grow: 2;
+  font-size: 52px;
+  margin: 0;
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    105deg,
+    #f9f3a7,
+    #fff983,
+    #ffff59,
+    #ffff59,
+    #fde45c,
+    #ffeb6f,
+    #ffc05b,
+    #ff9c71,
+    #fe97a7,
+    #fc82bd,
+    #f66bc2,
+    #e579d1,
+    #d76ce0,
+    #df68e1,
+    #e863e2,
+    #fa57e2
+  );
+}
+
+.introduction {
+  margin: 60px 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.context {
+  color: white;
+  font-size: 16px;
+  line-height: 2;
+  margin: 100px 10vw;
+  text-align: justify;
+}
+
+.graph01,
+.graph02,
+.graph03,
+.graph04 {
+  flex-grow: 2;
+  background-size: 70%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    105deg,
+    #f9f3a7,
+    #fff983,
+    #ffff59,
+    #ffff59,
+    #fde45c,
+    #ffeb6f,
+    #ffc05b,
+    #ff9c71,
+    #fe97a7,
+    #fc82bd,
+    #f66bc2,
+    #e579d1,
+    #d76ce0,
+    #df68e1,
+    #e863e2,
+    #fa57e2
+  );
+  font-weight: 700;
+  margin: 100px 15px 15px;
+  text-align: left;
+}
+
+.graph01 {
+  background-size: 30%;
+}
+
+.graph02,
+.graph04 {
+  background-size: 50%;
+}
+
+.subtitle {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.filters {
+  text-align: start;
+  margin: 15px;
+}
+
+.select {
+  border-radius: 2px;
+  padding: 0.4rem 0.5rem;
+  font-size: 14px;
+  color: #5ebf0d;
+  background-color: transparent;
+  border: 2px solid #5ebf0d;
+  margin-right: 10px;
+  background-color: 0.2s ease, color 0.2s ease;
+}
