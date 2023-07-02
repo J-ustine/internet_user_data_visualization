@@ -18,7 +18,7 @@ npm start
 ## Languages and main framework
 **JavaScript** as requested in the challenge statement and **React.js**
 
-## Librairies
+## Libraries
 I took care not to use many libraries to **avoid impacting performance and increasing complexity**.  
 That said, here are the libraries I chose to use and why :  
 - **[reaviz](https://reaviz.io/?path=/docs/docs-intro--docs)** (version 14.7.4)  
@@ -38,10 +38,12 @@ This decision was made to focus the allocated time for the challenge on research
 
 # Description
 - [x] Task 1: Displaying charts
-I made these decisions to align with the principles of UX design on data visualization:
+
+I made these decisions to align with the principles of UX design on data visualization:  
 - I chose to use **minimalist charts** types such as `Funnel`, `Gauge`, and `Bubble` in my project. I aim to allow users to focus on the essential information without any **unnecessary visual distractions**.
 <img width="1429" alt="funnel" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/9915c6ca-6bac-4357-86c6-2695094a0e1e">
-<img width="1389" alt="bubble" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/827c6009-2558-46b8-99fd-534101a0e3d9">
+
+![bubble_gif](https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/e3bd4d27-64a2-4d44-ba8e-7b3b5240410c)  
 
 - I chose not to display all the available information, (`Gauge` chart representing Internet Users by Year and Country and world `Map`). This decision stems from a desire to emphasize **simplicity**, **clarity**, and **avoid excessive amount of information**.
 <img width="1398" alt="gauge" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/9ff8da11-2fbd-4bba-9901-725e28cd4a7e">
@@ -57,7 +59,8 @@ I made these decisions to align with the principles of UX design on data visuali
 - [x] Task 3: World Map data visualization  
 - Looking for a library to display an interactive map, I noticed [kepler](https://kepler.gl/) library. I managed to generate an [interactive map](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/rezva28i2giv00w/keplergl_jnr606m.json) with the backend data but due to a lack of a paying token, I could not implement it.
 - I therefore used the same library as that of the previous graphs. I also used this [gist](https://gist.github.com/tadast/8827699#file-countries_codes_and_coordinates-csv) which allowed me to retrieve the latitude and longitude coordinates of the countries provided by the backend server. I did a mapping to add the number of users per country in a json format (`src/assets/map-data.json`) in order to be able to inject this data into my `Map` component.
-<img width="1410" alt="map" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/29419cf9-0cac-467a-882c-316ac2907cd4">
+![map_gif](https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/25c7e450-8844-4e55-90fe-7cc0c577b1ca)
+
 
 # Future steps
 The next steps that I would have taken if I had to continue this project after the deadline would be:   
