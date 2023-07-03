@@ -19,8 +19,7 @@ npm start
 **JavaScript** as requested in the challenge statement and **React.js**
 
 ## Libraries
-I took care not to use many libraries to **avoid impacting performance and increasing complexity**.  
-That said, here are the libraries I chose to use and why :  
+I took care not to use many libraries to **avoid impacting performance and increasing complexity**. That said, here are the libraries I chose to use and why :  
 - **[reaviz](https://reaviz.io/?path=/docs/docs-intro--docs)** (version 14.7.4)  
 It is a powerful charting library for React.js. It provides a wide range of customizable and interactive chart components. 
 I choose this library beacause you can easily visualize your data in a visually appealing and informative manner. 
@@ -40,16 +39,18 @@ This decision was made to focus the allocated time for the challenge on research
 - [x] Task 1: Displaying charts
 
 I made these decisions to align with the principles of UX design on data visualization:  
-- I chose to use **minimalist charts** types such as `Funnel`, `Gauge`, and `Bubble` in my project. I aim to allow users to focus on the essential information without any **unnecessary visual distractions**.
-<img width="1429" alt="funnel" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/9915c6ca-6bac-4357-86c6-2695094a0e1e">
-
-![bubble_gif](https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/e3bd4d27-64a2-4d44-ba8e-7b3b5240410c)  
+- I chose to use **minimalist charts** types such as `Funnel`, `Gauge`, and `Bubble` in my project. I aim to allow users to focus on the essential information without any **unnecessary visual distractions**.  
+<img width="1429" alt="funnel" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/01b072c7-8b4e-4b6e-8947-f5af2bc19ce6">
+ 
+![bubble_gif](https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/895551f7-412c-44c0-85d4-4d8ca3ad3335)
 
 - I chose not to display all the available information, (`Gauge` chart representing Internet Users by Year and Country and world `Map`). This decision stems from a desire to emphasize **simplicity**, **clarity**, and **avoid excessive amount of information**.
-<img width="1398" alt="gauge" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/9ff8da11-2fbd-4bba-9901-725e28cd4a7e">
+<img width="1398" alt="gauge" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/0d3c487b-c584-4190-bc4d-181b6606e415">
+
 
 - As for the color palette and font selection, I drew inspiration from the *Femhack* page. They exhibit appropriate **contrast, hue, and saturation**, ensuring optimal **readability** and contribute to create a visually appealing user interface.
-<img width="1416" alt="intro" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/12c6568d-2335-47be-8b99-55265ebae772">   
+ <img width="1416" alt="intro" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/735e931f-a9a4-4042-8425-5c90855db526">
+
 
 - [x] Task 2: Animating website  
 - **Gauge chart representing Internet Users by Year and Country** : Every 10 seconds, the selected year is modified. A random year from the available one is chosen. The number of users displayed in the gauge displays the minimum number (0) and gradually increases to the correct number for the country and year selected.  
@@ -59,13 +60,13 @@ I made these decisions to align with the principles of UX design on data visuali
 - [x] Task 3: World Map data visualization  
 - Looking for a library to display an interactive map, I noticed [kepler](https://kepler.gl/) library. I managed to generate an [interactive map](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/rezva28i2giv00w/keplergl_jnr606m.json) with the backend data but due to a lack of a paying token, I could not implement it.
 - I therefore used the same library as that of the previous graphs. I also used this [gist](https://gist.github.com/tadast/8827699#file-countries_codes_and_coordinates-csv) which allowed me to retrieve the latitude and longitude coordinates of the countries provided by the backend server. I did a mapping to add the number of users per country in a json format (`src/assets/map-data.json`) in order to be able to inject this data into my `Map` component.
-![map_gif](https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/25c7e450-8844-4e55-90fe-7cc0c577b1ca)
+![map_gif](https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/ff9f1736-a9ef-4c8e-afc7-04a3cdb08af1)
 
 
 # Future steps
 The next steps that I would have taken if I had to continue this project after the deadline would be:   
 - [ ] The implementation of **error handling** on my requests to the backend server. I noticed that some countries do not have data for all the years available. Error handling will prevent an error from popping up.  
 - [ ] **Interactive world map**. I would have implemented the [kepler](https://kepler.gl/) library with this [interactive map](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/rezva28i2giv00w/keplergl_jnr606m.json).  
-<img width="978" alt="interactive_map" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/5d627c11-3448-4819-83ac-f52c410b2d98">
+<img width="978" alt="interactive_map" src="https://github.com/J-ustine/internet_user_data_visualization/assets/78701219/65f267a6-8ce4-4aeb-865d-1cf688df86bb">
 
 - [ ] **Performance improvement**. I would have taken the necessary time to optimize performance in terms of the number of requests made to the API, perhaps through better use of the cache. This is not a problem at the moment but it remains to be improved by anticipating a bigger feed on the project.
